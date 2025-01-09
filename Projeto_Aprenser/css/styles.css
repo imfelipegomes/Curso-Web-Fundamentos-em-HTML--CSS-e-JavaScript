@@ -17,6 +17,14 @@ h1 {
     font-size: 4.8rem;
 }
 
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
 nav a {
     color: inherit;
 }
@@ -27,12 +35,16 @@ nav a {
 
 .btn {
     background-color: var(--primary-color);
-    color: black;
     border-radius: 4px;
     font-size: 1.8rem;
     text-decoration: none;
     padding: 1.6rem 4.6rem;
     display: inline-block;
+    color: inherit;
+}
+
+.wrapperContainer {
+    padding-top: 1px;
 }
 
 .wrapperContainer-dark {
@@ -52,6 +64,16 @@ nav a {
 .container {
     max-width: 127.6rem;
     margin: auto;
+}
+
+.section_title {
+    padding: 7rem 0;
+    text-align: center;
+    margin: 0;
+}
+
+.section_btn {
+    margin: 7rem 0;
 }
 
 .header {
@@ -87,4 +109,61 @@ nav a {
     justify-content: space-between;
     align-items: center;
     gap: 20rem;
+}
+
+.hero_title {
+    margin-bottom: 4rem;
+}
+
+.cursos {
+    text-align: center;
+}
+
+.cursosContainer {
+    display: flex;
+    text-align: center;
+    gap: 2rem;
+}
+
+.curso_card {
+    /* border: 1px solid #b4b4b4;
+    border-radius: 10px;
+    flex: 1; */
+
+    flex: 1;
+} 
+
+.curso_card img {
+    display: block;
+    width: 100%;
+}
+
+.curso_card h3 {
+    font-size: 2.4rem;
+}
+
+.curso_card p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.cursos_card_content {
+    padding: 1rem 1.25rem;
+    border: 1px solid #ccc;
+    border-radius: 0 0 8px 8px;
+    border-top: transparent;
+}
+
+.escola {
+    display: flex;
+    gap: 3rem;
+}
+
+.escola_title {
+    font-size: 3.6rem;
+}
+
+.escola p {
+    font-size: 1.8rem;
+    line-height: 1.5rem;
 }
