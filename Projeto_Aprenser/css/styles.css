@@ -84,6 +84,10 @@ nav a {
     padding: 2rem 0;
 }
 
+.header_nav {
+    
+}
+
 .header_nav a {
     padding: .75em 1.15em;
     border: solid 1px;
@@ -156,14 +160,32 @@ nav a {
 
 .escola {
     display: flex;
-    gap: 3rem;
+    gap: 6rem;
 }
 
 .escola_title {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
+    margin-top: 7.5rem;
 }
 
 .escola p {
-    font-size: 1.8rem;
-    line-height: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    font-weight: 300;
+}
+
+.contatos_address {
+    text-align: right;
+    font: normal 400 1.8rem "Sora", sans-serif;
+    padding: 3rem 0;
+}
+
+.footer {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 4.5rem;
+}
+
+footer a {
+    color: var(--primary-color);
 }
