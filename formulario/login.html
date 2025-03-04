@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <h1>Login</h1>
+
+    <form action="#" method="post"> <!-- O valor get ou post do atributo method, vai definir, como serão enviados os dados ao servidor. GET: Os dados são enviados na URL, para solicitações que "buscam dados no servidor", exemplo: pesquisas e filtros. POST: os dados não são visíveis na URL, alteram o estado do servidor, exemplo: login, cadastro, envio de arquivos e etc, interessante para senhas. -->
+
+        <fieldset> <!-- Por uma questão semântica, é ideal adicionar os campos dentro de fieldset, é tipo uma div -->
+            <legend>Entre com seus dados de acesso</legend> <!-- O campo legend é como se fosse um título ppara o formulário -->
+
+            <label for="user">Usuário</label> <!-- Aqui é a "legenda" do que se trata o campo a seguir, o "for" deve ser o mesmo do id do input -->
+            <input type="text" id="user" required autofocus> <!-- Aqui é o campo que o usuário vai preencher, o id e ofor do label se conectam e um é a etiqueta do outro, devem ser os mesmos --> <!-- O atributo booleano autofocus serve para melhorar a usabilidade da aplicação, ou seja, quando o usuário entrar na aba do formulário, o mesmo já estará neste input para preencher, ele não precisa clicar -->
+
+            <label for="pass">Senha</label>
+            <input type="text" id="pass" required> <!-- O atributo required é booleano e não tem outro valor, ou ele existe ou não existe e serve para adicionar o input como "obrigatório" -->
+
+            <input type="submit" value="Entrar"> <!-- Este input nada mais é que o botão que o usuário deve clicar após preencher o formulário -->
+        </fieldset>
+    </form>
+</body>
+</html>
