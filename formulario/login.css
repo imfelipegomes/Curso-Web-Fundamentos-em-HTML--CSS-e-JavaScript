@@ -58,3 +58,33 @@ legend {
     font-size: 1.1em;
     margin-bottom: .5em;
 }
+
+.btn2 {
+    font-weight: bold;
+    background-color: rgb(233, 73, 15);
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.btn2:hover {
+    background-color: #000;
+    border: 1px solid #fff;
+}
+
+.btns {
+    display: flex;
+    gap: 1em;
+}
+
+.btn-apagar {
+    background-color: rgb(235, 235, 235);
+    color: #000;
+    border: 1px solid #000;
+}
+
+.btn-apagar:hover {
+    background-color: rgb(228, 10, 10);
+    border: 1px solid #fff;
+    color: #fff;
+}
