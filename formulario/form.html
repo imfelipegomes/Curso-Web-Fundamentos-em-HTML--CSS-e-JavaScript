@@ -21,11 +21,27 @@
 
             <label for="">Possui atividade extra?</label>
             <label>
-            <input type="radio" name="atvExtra">Sim <!-- Selecionando a opção de name identica as duas opções sim/não, ele seleciona apenas uma e não as duas opções sim/não ao mesmo tempo -->
+            <input type="radio" name="atvExtra" value="s">Sim <!-- Selecionando a opção de name identica as duas opções sim/não, ele seleciona apenas uma e não as duas opções sim/não ao mesmo tempo --> <!-- No radio, podemos selecionar apenas 1 opção -->
             </label>
             <label>
-            <input type="radio" name="atvExtra">Não
-            </label> <!-- Perceba que, adicionei os inputs dentro das tags label, e por que isso? Bom, dependendo do zoom ou até por dificuldade motora do usuário, seja difícil ekle clicar no círculo para selecionar o sim/não, sendo assim, adicionando elas na label, ele pode simplesmente clicar na palavra sim/não que já seleciona a opção, isso facilita ao usuário -->
+            <input type="radio" name="atvExtra" value="n">Não
+            </label> <!-- Perceba que, adicionei os inputs dentro das tags label, e por que isso? Bom, dependendo do zoom ou até por dificuldade motora do usuário, seja difícil ele clicar no círculo para selecionar o sim/não, sendo assim, adicionando elas na label, ele pode simplesmente clicar na palavra sim/não que já seleciona a opção, isso facilita ao usuário -->
+
+            <fieldset>
+                <legend>Área de interesse</legend>
+
+                <label for="">Quais são suas tecnologias preferidas?</label>
+                <input type="checkbox" name="interesse" value="html">HTML <!-- Não se esqueça de adicionar o name para identificação do "o que" e do value para a resposta escolhida, assim o servidor receberá a informação corretamente -->
+                <input type="checkbox" name="interesse" value="css">CSS
+                <input type="checkbox" name="interesse" value="java">JAVA
+                <input type="checkbox" name="interesse" value="javascript">JavaScript
+                <input type="checkbox" name="interesse" value="php">PHP
+                <input type="checkbox" name="interesse" value="angular">Angular
+                <input type="checkbox" name="interesse" value="react">React
+                <!-- O checkbox, serve para você selecionar 1 ou mais opções, ao contrário do radio -->
+
+                <!-- É interessante colocar todas as opções dentro da label, para facilitar ao usuário -->
+            </fieldset>
 
             <input type="submit" value="Enviar">
         </fieldset>
