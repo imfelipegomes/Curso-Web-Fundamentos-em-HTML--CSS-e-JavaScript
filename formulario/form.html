@@ -11,7 +11,7 @@
             <legend>Introdução (Form complexo)</legend>
             
             <label for="email">E-mail</label>
-            <input type="email" name="email" required> <!-- Sempre coloque o tipo de agente de usuário correto, para o browser, assim o device vai se adequar ao tipo do atributo e melhorar a usabilidade ao usuário -->
+            <input type="email" name="email" required placeholder="Digite um e-mail válido"> <!-- Sempre coloque o tipo de agente de usuário correto, para o browser, assim o device vai se adequar ao tipo do atributo e melhorar a usabilidade ao usuário -->
 
             <label for="filhos">Quantidade de filhos</label>
             <input type="number" id="filhos" min="0">
@@ -43,8 +43,88 @@
                 <!-- É interessante colocar todas as opções dentro da label, para facilitar ao usuário -->
             </fieldset>
 
-            <input type="submit" value="Enviar">
+        <label>Escolha uma linguagem:
+            <select name="linguagem" required> <!-- Este tipo select, é interessante para darmos uma vasta quantidade de itens, para a seleção de apenas 1 item, muito usado em formulários que pedem Estado/Cidade -->
+                
+            <!-- Há um atributo no select, chamado multiple, com ele é possível visualizar as opções que tem no select, de acordo com o valor que eu colocar no atributo size -->
+            
+                <option value=""> Selecione uma</option>
+                
+                <optgroup label="frontend"> <!-- Esta tag serve para adicionar um grupo para as opções, neste exemplo, criei dois grupos, linguagens de frontend e backend -->
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="angular">Angular</option>
+                    <option value="react">React</option>
+                </optgroup>
+
+                <optgroup label="backend">
+                    <option value="java">Java</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="php">PHP</option>
+                    <option value="nodejs">NodeJs</option>
+                </optgroup>
+            </select>
+
+                <input type="text" list="linguagens 2 datalist">
+                <datalist id="linguagens 2 datalist"> <!-- No datalist, não aparecem as opções, mas, quando você digita uma letra ou as primeiras letras de um item, ele busca todos os itens que tem a letra ou as primeiras letras que você digitou, ideal para uma lista enorme de itens -->
+                    <option value="HTML">
+                    <option value="CSS">
+                    <option value="JavaScript">
+                    <option value="JAVA">
+                    <option value="PHP">
+                </datalist>
+        </label>
         </fieldset>
+
+        <fieldset>
+            <legend>Mensagem</legend>
+            <textarea name="msg" cols="40" rows="10"></textarea> <!-- cols e rows é basicamente para definir o tamanho da área de texto, cols colunas e rows linhas que o usuário pode digitar... mas podemos também fazer isso no CSS no seletor textarea -->
+            
+            <!-- Há um atributo chamado  disabled que é possível deixar o textarea já preenchido e sem a possibilidade do usuário apagar ou editar, é muito comum vermos esse tipo de atributo, naqueles formulário de contrato de termos de aplicativo ou sites web -->
+
+            <input type="file"> <!-- Responsável por selecionar algum arquivo -->
+        </fieldset>
+
+        <input type="hidden" value="controle-para-o-servidor"> <!-- Não aparece para o usuário -->
+
+        <input type="range" min="0" max="10" step="2">
+
+        <input type="time">
+
+        <input type="color">
+
+        <br><br>
+        <input type="submit" value="Enviar">
+
+
+        <br><br><br>
+        <hr>
+        <br>
+
+        <h1>Meter</h1>
+        <label for="combustivel">Nível do combustível</label>
+        <meter id="combustivel" min="0" max="100" low="30" high="90" value="80" optimum="50"></meter> <!-- É utilizada para medir, ou seja, ela exibe um valor dentro de um intervalo definido, através de cores... Atributos:
+        value: Define o valor atual da medida. Este é o único atributo obrigatório.
+        min: Define o valor mínimo do intervalo.
+        max: Define o valor máximo do intervalo.
+        low: Define o limite inferior do intervalo considerado  "baixo".
+        high: Define o limite superior do intervalo considerado "alto".
+        optimum: Indica o valor ideal dentro do intervalo.-->
+
+        <br>
+        <h1>Progress</h1>
+        <label>Porcentagem da tarefa
+        <progress max="100" value="50">50%</progress>
+    </label>
+
+    <br><br>
+
+    <form>
+        <input type="number" name="a" id="a"> X
+        <input type="number" name="b" id="b"> =
+        <output name="result" for="a b"></output> <!-- Serve para apresentar alguma valor para o usuário, o resultado de uma ação do usuário -->
+    </form>
+
     </form>
 </body>
 </html>
