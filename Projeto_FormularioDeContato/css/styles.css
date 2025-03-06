@@ -1,0 +1,15 @@
+html {
+    background-color: #181818;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #fff;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+displ
