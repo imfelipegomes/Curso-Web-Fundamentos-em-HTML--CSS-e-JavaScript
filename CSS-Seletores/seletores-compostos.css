@@ -1,0 +1,40 @@
+/* Lembrando que a leitura é sempre da direita para a esquerda */
+
+/* Aqui seleciona tudo que está dento das tags article */
+article {
+    outline: 4px solid green;
+}
+
+/* o espaço entre article e a letra a, representa descendência */
+article a {
+    color: red;
+}
+
+/* o símbolo > seleciona os filhos direto de um elemento, ou seja, selecionei as tags "b" que são filhos diretos da tag a */
+article a > b {
+    color: green;
+}
+
+/* O p que é próximo irmão do elemento h3, logo após o h3, que no caso é um dos parágrafos */
+h3 + p {
+    background-color: yellow;
+}
+
+/* Seleciona TODOS os parágrafos que imediantamente estão após um h3 */
+hr ~ p {
+    border: 4px dashed orange;
+}
+
+.destaque {
+    padding-left: 3rem;
+}
+
+/* Quando eu quiser adicionar todos os elementos da mesma tag, exceto uma em específico... neste exemplo, quero selecionar todas as tags p, exceto a com classe destaque */
+article p:not(.destaque) {
+    background-color: aquamarine;
+}
+
+
+
+
+/* De qualquer forma, a maneira mais utilizada e considerada boas práticas, é utilizar classes e id */
