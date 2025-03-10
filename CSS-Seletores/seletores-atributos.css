@@ -1,0 +1,18 @@
+/* Aqui eu estou dizendo ao CSS, selecione todos os atributos href que tem o valor # dentro das tags a */
+a[href="#"] {
+    opacity: .2;
+}
+
+/* Com o ^ eu estou falando para o CSS selecionar tudo que COMEÇA com http dentro da tag a */
+a[href^="http"] {
+    color: red;
+}
+
+/* Aqui com $ eu estou pedindo ao css para selecionar tudo que TERMINA com .pdf */
+a[href$=".pdf"] {
+    color: green;
+}
+
+a[target="_blank"] {
+    text-decoration: none;
+}

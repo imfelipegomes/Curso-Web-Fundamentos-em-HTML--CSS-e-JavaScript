@@ -82,7 +82,6 @@ input {
     display: flex;
     align-items: center;
     gap: 25%;
-    cursor: pointer;
     padding-top: 1.3em;
 }
 
@@ -93,5 +92,6 @@ input {
 .button-container a {
     color: rgb(250, 96, 35);
     text-decoration: none;
+    cursor: pointer;
 }
 
